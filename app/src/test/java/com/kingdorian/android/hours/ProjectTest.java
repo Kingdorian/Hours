@@ -16,8 +16,8 @@ public class ProjectTest {
 
     @Test
     public void testAddHoursTotalTimeIncrease() {
-        HourEntry hourEntry = new HourEntry(3.5, new Date());
-        HourEntry hourEntry2 = new HourEntry(2.2, new Date());
+        HourEntry hourEntry = new HourEntry(3.5, null);
+        HourEntry hourEntry2 = new HourEntry(2.2, null);
         Project p = new Project("Name");
         p.addHours(hourEntry);
         p.addHours(hourEntry2);

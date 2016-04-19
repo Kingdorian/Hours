@@ -1,6 +1,6 @@
 package com.kingdorian.android.hours.model;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Created by dorian on 19-4-16.
@@ -8,21 +8,21 @@ import java.util.Date;
 public class HourEntry {
     private double time;
     private int projectId;
-    private Date date;
+    private Calendar calendar;
 
     /**
      * Constructs a new HourEntry object.
      */
-    public HourEntry(double time, Date date) {
+    public HourEntry(double time, Calendar date) {
         this.time = time;
-        this.date = date;
+        this.calendar = date;
     }
 
     /**
      * Returns the date of this timeEntry
      */
-    public Date getDate() {
-        return date;
+    public Calendar getDate() {
+        return calendar;
     }
     /**
      * Returns the time stored in this entry.
@@ -41,8 +41,8 @@ public class HourEntry {
      * Changes the date of this entry.
      * @param date new date
      */
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(Calendar c) {
+        this.calendar = c;
     }
 
 
